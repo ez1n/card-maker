@@ -1,0 +1,58 @@
+@value makerBlue from '../common/colors.css';
+@value makerWhite from '../common/colors.css';
+
+.login {
+  text-align: center;
+  width: 25rem;
+}
+
+.loginHeader {
+  padding: 0.5em;
+  color: makerWhite;
+  background-color: makerBlue;
+}
+
+.imgLogo {
+  width: 4em;
+  margin: 0;
+}
+
+.logoTitle {
+  margin: 0;
+}
+
+.loginBody {
+  background-color: makerWhite;
+  
+  padding: 0.8em;
+}
+
+.loginTitle {
+  margin: 0;
+  align-items: center;
+  margin-bottom: 0.3em;
+}
+
+.loginBtns {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBtn {
+  padding: 0.5em;
+  margin-top: 0.8em;
+  border-radius: 0.8em;
+  border: 0.2em solid makerBlue;
+  background-color: makerWhite;
+  cursor: pointer;
+}
+
+.loginFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  height: 2em;
+  color: makerWhite;
+  background-color: makerBlue;
+}
