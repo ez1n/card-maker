@@ -1,29 +1,32 @@
 @value makerBlue from '../../common/colors.css';
 @value makerWhite from '../../common/colors.css';
+@value makerBlack from '../../common/colors.css';
 
-.loginHeader {
+.header {
   padding: 0.5em;
-  color: makerWhite;
   background-color: makerBlue;
+  position: relative;
 }
 
-.imgLogo {
+.logo {
   width: 4em;
   margin: 0;
 }
 
-.logoTitle {
+.title {
   margin: 0;
+  color: makerWhite;
 }
 
-.loginBody {
-  background-color: makerWhite;
-  
+.logout {
+  position: absolute;
+  right: 3em;
+  top: 1em;
   padding: 0.8em;
-}
-
-.loginTitle {
-  margin: 0;
-  align-items: center;
-  margin-bottom: 0.3em;
+  border-radius: 20%;
+  background-color: makerBlack;
+  color: makerWhite;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
 }
