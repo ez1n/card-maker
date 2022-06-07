@@ -1,0 +1,12 @@
+@value makerBlue from '../../common/colors.css';
+@value makerWhite from '../../common/colors.css';
+
+.loginFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  height: 2em;
+  color: makerWhite;
+  background-color: makerBlue;
+}

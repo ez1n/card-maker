@@ -1,22 +1,35 @@
 import React from 'react';
+import Footer from '../footer/footer';
+import Header from '../header/header';
 import styles from './login.module.css';
 
-const Login = (props) => (
-  <div className={styles.login}>
-    <header className={styles.loginHeader}>
-      <img className={styles.imgLogo} src="images/logo.png" alt="logo" />
-      <h1 className={styles.logoTitle}>Business Card Maker</h1>
-    </header>
-    <div className={styles.loginBody}>
-      <h2 className={styles.loginTitle}>Login</h2>
-      <div className={styles.loginBtns}>
-        <button className={styles.loginBtn}>Google</button>
-        <button className={styles.loginBtn}>Github</button>
-        <button className={styles.loginBtn}>ID/PW</button>
-      </div>
-    </div>
-    <footer className={styles.loginFooter}>Code your dream</footer>
-  </div>
-);
+const Login = ({ authService }) => {
+  const onLogin = (event) => {
+    authService
+      .login(event.currentTarget.textContent)
+      .then(console.log);
+  };
+  return (
+    <section className={styles.login}>
+      <Header />
+      <section>
+        <h1>Login</h1>
+        <ul className={styles.loginButtons}>
+          <li className={styles.loginButton}>
+            <button className={styles.button} onClick={onLogin}>
+              Google
+            </button>
+          </li>
+          <li className={styles.loginButton}>
+            <button className={styles.button} onClick={onLogin}>
+              Github
+            </button>
+          </li>
+        </ul>
+      </section>
+      <Footer />
+    </section>
+  );
+};
 
 export default Login;
