@@ -1,0 +1,6 @@
+@value makerWhite from '../../common/colors.css';
+
+.body {
+  width: 100vmax;
+  background-color: makerWhite;
+}

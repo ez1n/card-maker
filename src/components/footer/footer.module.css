@@ -1,7 +1,7 @@
 @value makerBlue from '../../common/colors.css';
 @value makerWhite from '../../common/colors.css';
 
-.loginFooter {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
