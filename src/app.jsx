@@ -5,7 +5,6 @@ import Login from './components/login/login';
 import Maker from './components/maker/maker';
 
 export default function App({ authService }) {
-
   return (
     <div className={styles.app}>
       <BrowserRouter>
